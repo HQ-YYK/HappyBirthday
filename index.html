@@ -1,49 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>jquery万圣节礼物盒子动画特效</title>
 
-<link rel='stylesheet' href='static/css/css.css'>
-<link rel="stylesheet" href="static/css/style.css">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery万圣节礼物盒子动画特效</title>
+
+	<link rel='stylesheet' href='static/css/css.css'>
+	<link rel="stylesheet" href="static/css/style.css">
 
 </head>
+
 <body>
 
-<div class="top">
-	<div class="ribbonTop"></div>
-	<div class="ghost">
-		<div class="eye left">
-			<div class="eyeball"></div>
+	<div class="top">
+		<div class="ribbonTop"></div>
+		<div class="ghost">
+			<div class="eye left">
+				<div class="eyeball"></div>
+			</div>
+			<div class="eye right">
+				<div class="eyeball"></div>
+			</div>
 		</div>
-		<div class="eye right">
-			<div class="eyeball"></div>
+		<div class="hand right"></div>
+	</div>
+	<div class="bottom">
+		<div class="hand left"></div>
+		<div class="ribbonBottom"></div>
+		<div class="ribbonBottom h"></div>
+	</div>
+	<div>
+		<h3 class="ghostText">Hummm?</h3>
+	</div>
+	<div class="pageLoading">
+		<div class="pumpkin">
+			<div class="pumpkinHead"></div>
+			<div class="eye left"></div>
+			<div class="eye right"></div>
+			<div class="mouth"></div>
+		</div>
+		<div class="loading">
+			<div class="bar"></div>
 		</div>
 	</div>
-	<div class="hand right"></div>
-</div>
-<div class="bottom">
-	<div class="hand left"></div>
-	<div class="ribbonBottom"></div>
-	<div class="ribbonBottom h"></div>
-</div>
-<div>
-	<h3 class="ghostText">Hummm?</h3>
-</div>
-<div class="pageLoading">
-	<div class="pumpkin">
-		<div class="pumpkinHead"></div>
-		<div class="eye left"></div>
-		<div class="eye right"></div>
-		<div class="mouth"></div>
-	</div>
-	<div class="loading">
-		<div class="bar"></div>
-	</div>
-</div>
 
-<script src='static/js/jquery.min.js'></script>
-<script src="static/js/index.js"></script>
+
+	<div class="happy-border">
+		<div class="happy">
+			<!--小旗子-->
+			<div class="ribbon">
+				<div class="cord"></div>
+				<div class="triangle triangle-1"></div>
+				<div class="triangle triangle-2"></div>
+				<div class="triangle triangle-3"></div>
+				<div class="triangle triangle-4"></div>
+				<div class="triangle triangle-5"></div>
+				<div class="triangle triangle-6"></div>
+				<div class="triangle triangle-7"></div>
+				<div class="triangle triangle-8"></div>
+			</div>
+
+			<!--彩旗-->
+			<div class="ribbon1">
+				<div class="cord"></div>
+				<div class="triangle triangle-1"></div>
+				<div class="triangle triangle-2"></div>
+				<div class="triangle triangle-3"></div>
+				<div class="triangle triangle-4"></div>
+				<div class="triangle triangle-5"></div>
+				<div class="triangle triangle-6"></div>
+				<div class="triangle triangle-7"></div>
+				<div class="triangle triangle-8"></div>
+			</div>
+			<!--旗子-->
+			<div class="ribbon4">
+				<div class="cord"></div>
+				<div class="triangle triangle-1"></div>
+				<div class="triangle triangle-2"></div>
+				<div class="triangle triangle-3"></div>
+				<div class="triangle triangle-4"></div>
+				<div class="triangle triangle-5"></div>
+				<div class="triangle triangle-6"></div>
+				<div class="triangle triangle-7"></div>
+				<div class="triangle triangle-8"></div>
+			</div>
+			<!--气球-->
+			<div class="balloon-main">
+				<div class="balloon balloon1">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon2">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon3">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon4">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon5">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon6">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+
+				<div class="balloon-cord"></div>
+				<div class="balloon-cord1">
+					<div class="line line1"></div>
+					<div class="line line2"></div>
+				</div>
+			</div>
+
+			<div class="balloon-main balloon-main1">
+				<div class="balloon balloon1">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon2">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon3">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon4">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon5">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon6">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon-cord"></div>
+				<div class="balloon-cord1">
+					<div class="line line1"></div>
+					<div class="line line2"></div>
+				</div>
+			</div>
+
+			<div class="balloon-main balloon-main2">
+				<div class="balloon balloon1">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon2">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon3">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon4">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon5">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon6">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon-cord"></div>
+				<div class="balloon-cord1">
+					<div class="line line1"></div>
+					<div class="line line2"></div>
+				</div>
+			</div>
+
+			<div class="balloon-main balloon-main3">
+				<div class="balloon balloon1">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon2">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon3">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon4">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon5">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon balloon6">
+					<div class="circle"></div>
+					<div class="balloon-line"></div>
+				</div>
+				<div class="balloon-cord"></div>
+				<div class="balloon-cord1">
+					<div class="line line1"></div>
+					<div class="line line2"></div>
+				</div>
+			</div>
+
+			<!--相框-->
+			<div class="frame">
+				<div class="box1"></div>
+				<div class="box2"></div>
+			</div>
+
+			<!--蛋糕-->
+			<div class="cake-main">
+				<div class="cake">
+					<div class="cream"></div>
+					<div class="icing icing1"></div>
+					<div class="icing icing2"></div>
+					<div class="icing icing3"></div>
+					<div class="icing icing4"></div>
+					<div class="icing icing5"></div>
+					<div class="icing icing6"></div>
+				</div>
+				<div class="cake cake1">
+					<div class="cream"></div>
+					<div class="icing icing1"></div>
+					<div class="icing icing2"></div>
+					<div class="icing icing3"></div>
+					<div class="icing icing4"></div>
+					<div class="icing icing5"></div>
+					<div class="icing icing6"></div>
+				</div>
+				<div class="cake cake2">
+					<div class="cream"></div>
+					<div class="icing icing1"></div>
+					<div class="icing icing2"></div>
+					<div class="icing icing3"></div>
+					<div class="icing icing4"></div>
+					<div class="icing icing5"></div>
+					<div class="icing icing6"></div>
+				</div>
+				<div class="candle">
+					<div class="flame"></div>
+				</div>
+			</div>
+
+			<!--礼盒-->
+			<div>
+				<div class="gift-main">
+					<div class="box-bottom"></div>
+					<div class="box-top"></div>
+					<div class="gift-cord"></div>
+					<div class="gift-flower"></div>
+					<div class="gift-flower gift-flower1"></div>
+					<div class="gift-flower gift-flower2"></div>
+					<div class="gift-flower gift-flower3"></div>
+					<div class="gift-flower gift-flower4"></div>
+				</div>
+
+				<div class="gift-main gift-main1">
+					<div class="box-bottom"></div>
+					<div class="box-top"></div>
+					<div class="gift-cord"></div>
+					<div class="gift-flower"></div>
+					<div class="gift-flower gift-flower1"></div>
+					<div class="gift-flower gift-flower2"></div>
+					<div class="gift-flower gift-flower3"></div>
+					<div class="gift-flower gift-flower4"></div>
+				</div>
+
+				<div class="gift-main gift-main2">
+					<div class="box-bottom"></div>
+					<div class="box-top"></div>
+					<div class="gift-cord"></div>
+					<div class="gift-flower"></div>
+					<div class="gift-flower gift-flower1"></div>
+					<div class="gift-flower gift-flower2"></div>
+					<div class="gift-flower gift-flower3"></div>
+					<div class="gift-flower gift-flower4"></div>
+				</div>
+
+				<div class="gift-main gift-main3">
+					<div class="box-bottom"></div>
+					<div class="box-top"></div>
+					<div class="gift-cord"></div>
+					<div class="gift-flower"></div>
+					<div class="gift-flower gift-flower1"></div>
+					<div class="gift-flower gift-flower2"></div>
+					<div class="gift-flower gift-flower3"></div>
+					<div class="gift-flower gift-flower4"></div>
+				</div>
+
+				<div class="gift-main gift-main4">
+					<div class="box-bottom"></div>
+					<div class="box-top"></div>
+					<div class="gift-cord"></div>
+					<div class="gift-flower"></div>
+					<div class="gift-flower gift-flower1"></div>
+					<div class="gift-flower gift-flower2"></div>
+					<div class="gift-flower gift-flower3"></div>
+					<div class="gift-flower gift-flower4"></div>
+				</div>
+
+				<div class="gift-main gift-main5">
+					<div class="box-bottom"></div>
+					<div class="box-top"></div>
+					<div class="gift-cord"></div>
+					<div class="gift-flower"></div>
+					<div class="gift-flower gift-flower1"></div>
+					<div class="gift-flower gift-flower2"></div>
+					<div class="gift-flower gift-flower3"></div>
+					<div class="gift-flower gift-flower4"></div>
+				</div>
+			</div>
+
+			<!--帽子-->
+			<div class="hat">
+				<div class="body"></div>
+				<div class="top"></div>
+				<div class="bottom1"></div>
+				<div class="bottom2"></div>
+				<div class="bottom3"></div>
+				<div class="bottom4"></div>
+				<div class="bottom5"></div>
+				<div class="bottom6"></div>
+				<div class="bottom7"></div>
+				<div class="bottom8"></div>
+				<div class="bottom9"></div>
+				<div class="bottom10"></div>
+				<div class="bottom11"></div>
+			</div>
+
+			<!--生日快乐-->
+			<div class="text" style="-webkit-text-stroke: 3px white;">
+				<h1 class="text1">
+					<span class="span1">Happy</span>
+					<span>Birthday</span>
+				</h1>
+			</div>
+			<div class="text text15" style="-webkit-text-stroke: 3px white;">
+				<h1 class="text1">
+					<span class="span1">22</span>
+				</h1>
+			</div>
+			<!--板块文本-->
+			<div class="textbg">
+				<div class=" textbg1"></div>
+				<div class="text">
+					年年皆胜意，岁岁都欢愉，生日快乐！
+				</div>
+			</div>
+			<!--by 署名-->
+			<div class="bybg">
+				<div class="text">
+					组织 祝 W 生日快乐！
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<script src='static/js/jquery.min.js'></script>
+	<script src="static/js/index.js"></script>
 
 </body>
+
 </html>
